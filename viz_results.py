@@ -252,9 +252,18 @@ def plot_aggregated_matrices_on_one_sheet(data, output_path):
         # Format the matrix to show 0.0 for 0.000 values
         avg_matrix = avg_matrix.map(lambda x: 0.0 if x == 0 else x)
 
+        formatted_annotations = avg_matrix.map(
+            lambda x: (0.0 if x == 0 else (f"{x:.3f}" if x < 1 else f"{x:.1f}"))
+        )
+
         # Plot the matrix
         sns.heatmap(
-            avg_matrix, annot=True, fmt=".1f", cmap=custom_cmap, cbar=True, ax=axes[i]
+            avg_matrix,
+            annot=formatted_annotations,
+            cmap=custom_cmap,
+            cbar=True,
+            ax=axes[i],
+            fmt="",
         )
         sub_title = (
             tag if tag.split("/")[0] not in data["env_name"][0] else tag.split("/")[1]
@@ -271,61 +280,6 @@ def plot_aggregated_matrices_on_one_sheet(data, output_path):
     # Save as SVG
     plt.savefig(
         f"{output_path}/{data['env_name'].iloc[0]}_average_sheet.pdf", format="pdf"
-    )
-    plt.close()
-
-
-def plot_cumulative_reward(data, output_path):
-    cumulative_reward_tag = "Environment/Cumulative Reward"
-
-    tasks = data["task"].unique()
-    patterns = data["difficulty_or_pattern_value"].unique()
-
-    cell_width = 1.5
-    cell_height = 1
-    fig_width_scalar = len(patterns)
-    fig_height_scalar = len(tasks)
-
-    fig_width = cell_width * fig_width_scalar * 0.7
-    fig_height = cell_height * fig_height_scalar * ((fig_height_scalar + 1) // 2) * 0.6
-
-    fig, ax = plt.subplots(figsize=(fig_width, fig_height))
-    fig.suptitle(
-        f"{data['env_name'].iloc[0]}: {cumulative_reward_tag.split('/')[1]}",
-        fontsize=16,
-        x=0.01,
-        ha="left",
-        y=0.99,  # Keep the title close to the top
-    )
-
-    custom_cmap = mcolors.LinearSegmentedColormap.from_list(
-        "custom_gradient", ["#14DFB4", "#FF931E", "#FF1D25"]
-    )
-
-    avg_matrix = pd.DataFrame(index=tasks, columns=patterns, dtype=float)
-
-    for task in tasks:
-        for pattern in patterns:
-            task_pattern_data = data[
-                (data["task"] == task)
-                & (data["difficulty_or_pattern_value"] == pattern)
-                & (data["tag"] == cumulative_reward_tag)
-            ]
-
-            if not task_pattern_data.empty:
-                avg_value = task_pattern_data["value"].mean()
-                avg_matrix.loc[task, pattern] = round(avg_value, 3)
-
-    avg_matrix = avg_matrix.map(lambda x: 0.0 if x == 0 else x)
-
-    sns.heatmap(avg_matrix, annot=True, fmt=".1f", cmap=custom_cmap, cbar=True, ax=ax)
-
-    ax.set_xlabel(f"{data['difficulty_or_pattern_key'][0].capitalize()}")
-    ax.set_ylabel("Task")
-
-    plt.subplots_adjust(left=0.05, bottom=0.4, top=0.7)
-    plt.savefig(
-        f"{output_path}/{data['env_name'].iloc[0]}_cumulative_reward.svg", format="svg"
     )
     plt.close()
 
@@ -350,8 +304,8 @@ def plot_cumulative_reward_multiple(data_list, output_path):
 
     # Determine the grid size for subplots
     num_datasets = len(data_list)
-    grid_cols = 2  # or any other layout you prefer
-    grid_rows = num_datasets  # ((num_datasets + 1) // grid_cols) * 2
+    grid_cols = 2
+    grid_rows = num_datasets
 
     cell_width = 1.5
     cell_height = 1
@@ -386,10 +340,20 @@ def plot_cumulative_reward_multiple(data_list, output_path):
                         avg_matrix.loc[task, pattern] = round(avg_value, 3)
 
             avg_matrix = avg_matrix.map(lambda x: 0.0 if x == 0 else x)
+            formatted_annotations = avg_matrix.map(
+                lambda x: (0.0 if x == 0 else (f"{x:.3f}" if x < 1 else f"{x:.1f}"))
+            )
 
             ax = axes[idx * 2 + jdx]
+
+            # Plotting heatmap with formatted annotations
             sns.heatmap(
-                avg_matrix, annot=True, fmt=".1f", cmap=custom_cmap, cbar=True, ax=ax
+                avg_matrix,
+                annot=formatted_annotations,
+                cmap=custom_cmap,
+                cbar=True,
+                ax=ax,
+                fmt="",
             )
 
             if data["difficulty_or_pattern_key"][0] == "None":
@@ -405,9 +369,7 @@ def plot_cumulative_reward_multiple(data_list, output_path):
         fig.delaxes(axes[idx])
 
     plt.tight_layout()
-    # plt.subplots_adjust(top=0.9)
-    # fig.suptitle("Cumulative Reward for Multiple Datasets", fontsize=16, y=1.02)
-    plt.savefig(f"{output_path}/cumulative_reward_multiple.svg", format="svg")
+    plt.savefig(f"{output_path}/cumulative_reward_multiple.pdf", format="pdf")
     plt.close()
 
 
@@ -442,21 +404,21 @@ if __name__ == "__main__":
     for train_root_dir, test_root_dir, output_path in zip(
         train_dirs, test_dirs, output_paths
     ):
-        # training_data = list_directories(
-        #     train_root_dir,
-        #     "training",
-        # )
+        training_data = list_directories(
+            train_root_dir,
+            "training",
+        )
         test_data = list_directories(test_root_dir, "test")
 
         datasets.append(test_data)
 
         #### 1
 
-        # plot_data_for_groups(pd.concat([training_data, test_data]), output_path, 1)
+        plot_data_for_groups(pd.concat([training_data, test_data]), output_path, 1)
 
         #### 2
 
-        # plot_aggregated_matrices_on_one_sheet(test_data, output_path)
+        plot_aggregated_matrices_on_one_sheet(test_data, output_path)
 
     ### 3
 
