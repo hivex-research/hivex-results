@@ -1,0 +1,10 @@
+results/AerialWildfireSuppression/test
+results/AerialWildfireSuppression/train
+results/DroneBasedReforestation/test
+results/DroneBasedReforestation/train
+results/OceanPlasticCollection/test
+results/OceanPlasticCollection/train
+results/WildfireResourceManagement/test
+results/WildfireResourceManagement/train
+results/WindFarmControl/test
+results/WindFarmControl/train
