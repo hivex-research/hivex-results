@@ -1,0 +1,1772 @@
+{
+    "WindFarmControl": {
+        "0_0": {
+            "winning_id": 2,
+            "important_tags": [
+                "WindFarmControl/Individual Performance"
+            ],
+            "mean_values": [
+                {
+                    "difficulty_or_pattern_value": 0,
+                    "task": 0,
+                    "id": 2,
+                    "tag": "Environment/Cumulative Reward",
+                    "mean_value": 4611.646169433594,
+                    "std_value": 39.95197526212735
+                },
+                {
+                    "difficulty_or_pattern_value": 0,
+                    "task": 0,
+                    "id": 2,
+                    "tag": "WindFarmControl/Individual Performance",
+                    "mean_value": 4611.5898046875,
+                    "std_value": 39.676758980888444
+                }
+            ]
+        },
+        "1_0": {
+            "winning_id": 1,
+            "important_tags": [
+                "WindFarmControl/Avoid Damage Reward"
+            ],
+            "mean_values": [
+                {
+                    "difficulty_or_pattern_value": 0,
+                    "task": 1,
+                    "id": 1,
+                    "tag": "Environment/Cumulative Reward",
+                    "mean_value": 4826.6553881835935,
+                    "std_value": 33.99286534404727
+                },
+                {
+                    "difficulty_or_pattern_value": 0,
+                    "task": 1,
+                    "id": 1,
+                    "tag": "WindFarmControl/Avoid Damage Reward",
+                    "mean_value": 4826.756228027344,
+                    "std_value": 36.95591548454739
+                },
+                {
+                    "difficulty_or_pattern_value": 0,
+                    "task": 1,
+                    "id": 1,
+                    "tag": "WindFarmControl/Individual Performance",
+                    "mean_value": 0.0,
+                    "std_value": 0.0
+                }
+            ]
+        }
+    },
+    "WildfireResourceManagement": {
+        "0_5": {
+            "winning_id": 0,
+            "important_tags": [
+                "Environment/Cumulative Reward"
+            ],
+            "mean_values": [
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 0,
+                    "id": 0,
+                    "tag": "Environment/Cumulative Reward",
+                    "mean_value": 120.11513977050781,
+                    "std_value": 30.495234755057457
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 0,
+                    "id": 0,
+                    "tag": "WildfireResourceManagement/Collective Performance",
+                    "mean_value": 48.047623825073245,
+                    "std_value": 12.30012370845873
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 0,
+                    "id": 0,
+                    "tag": "WildfireResourceManagement/Individual Performance",
+                    "mean_value": 25.529859733581542,
+                    "std_value": 6.5168944140036675
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 0,
+                    "id": 0,
+                    "tag": "WildfireResourceManagement/Reward for Moving Resources to Neighbours",
+                    "mean_value": 63.44483680725098,
+                    "std_value": 18.86539940904601
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 0,
+                    "id": 0,
+                    "tag": "WildfireResourceManagement/Reward for Moving Resources to Self",
+                    "mean_value": 0.6659428238868713,
+                    "std_value": 0.34641883158682535
+                }
+            ]
+        },
+        "1_5": {
+            "winning_id": 1,
+            "important_tags": [
+                "WildfireResourceManagement/Reward for Moving Resources to Self"
+            ],
+            "mean_values": [
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 1,
+                    "id": 1,
+                    "tag": "Environment/Cumulative Reward",
+                    "mean_value": 301.4590789794922,
+                    "std_value": 50.589352153281204
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 1,
+                    "id": 1,
+                    "tag": "WildfireResourceManagement/Collective Performance",
+                    "mean_value": 52.42880744934082,
+                    "std_value": 13.213045945399395
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 1,
+                    "id": 1,
+                    "tag": "WildfireResourceManagement/Individual Performance",
+                    "mean_value": 27.22167682647705,
+                    "std_value": 6.5057905262466
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 1,
+                    "id": 1,
+                    "tag": "WildfireResourceManagement/Reward for Moving Resources to Neighbours",
+                    "mean_value": 1.2814587712287904,
+                    "std_value": 0.3169255575214482
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 1,
+                    "id": 1,
+                    "tag": "WildfireResourceManagement/Reward for Moving Resources to Self",
+                    "mean_value": 233.32887573242186,
+                    "std_value": 58.13535329798181
+                }
+            ]
+        },
+        "2_5": {
+            "winning_id": 2,
+            "important_tags": [
+                "WildfireResourceManagement/Reward for Moving Resources to Neighbours"
+            ],
+            "mean_values": [
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 2,
+                    "id": 2,
+                    "tag": "Environment/Cumulative Reward",
+                    "mean_value": 784.7529388427735,
+                    "std_value": 237.5803281220698
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 2,
+                    "id": 2,
+                    "tag": "WildfireResourceManagement/Collective Performance",
+                    "mean_value": 46.654307174682614,
+                    "std_value": 12.41762735898119
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 2,
+                    "id": 2,
+                    "tag": "WildfireResourceManagement/Individual Performance",
+                    "mean_value": 25.153486728668213,
+                    "std_value": 6.66514805176298
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 2,
+                    "id": 2,
+                    "tag": "WildfireResourceManagement/Reward for Moving Resources to Neighbours",
+                    "mean_value": 685.7552093505859,
+                    "std_value": 200.96518835832964
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 2,
+                    "id": 2,
+                    "tag": "WildfireResourceManagement/Reward for Moving Resources to Self",
+                    "mean_value": 0.3521461673080921,
+                    "std_value": 0.28661129618806847
+                }
+            ]
+        }
+    },
+    "DroneBasedReforestation": {
+        "0_5": {
+            "winning_id": 2,
+            "important_tags": [
+                "Environment/Cumulative Reward"
+            ],
+            "mean_values": [
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 0,
+                    "id": 2,
+                    "tag": "DroneBasedReforestation/Cumulative Distance Reward",
+                    "mean_value": 2.7580876886844634,
+                    "std_value": 0.7562888045399391
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 0,
+                    "id": 2,
+                    "tag": "DroneBasedReforestation/Cumulative Distance Until Tree Drop",
+                    "mean_value": 78.29452056884766,
+                    "std_value": 14.296043451183179
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 0,
+                    "id": 2,
+                    "tag": "DroneBasedReforestation/Cumulative Distance to Existing Trees",
+                    "mean_value": 50.473754501342775,
+                    "std_value": 11.98073606874106
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 0,
+                    "id": 2,
+                    "tag": "DroneBasedReforestation/Cumulative Normalized Distance Until Tree Drop",
+                    "mean_value": 0.2758087694644928,
+                    "std_value": 0.07562888371330763
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 0,
+                    "id": 2,
+                    "tag": "DroneBasedReforestation/Cumulative Tree Drop Reward",
+                    "mean_value": 7.088011031150818,
+                    "std_value": 1.7168094182484812
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 0,
+                    "id": 2,
+                    "tag": "DroneBasedReforestation/Out of Energy Count",
+                    "mean_value": 0.9958095240592957,
+                    "std_value": 0.022119619288807686
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 0,
+                    "id": 2,
+                    "tag": "DroneBasedReforestation/Recharge Energy Count",
+                    "mean_value": 9.258539686203003,
+                    "std_value": 0.587428694662249
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 0,
+                    "id": 2,
+                    "tag": "DroneBasedReforestation/Save Location Count",
+                    "mean_value": 0.0,
+                    "std_value": 0.0
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 0,
+                    "id": 2,
+                    "tag": "DroneBasedReforestation/Tree Drop Count",
+                    "mean_value": 0.9893650794029236,
+                    "std_value": 0.03160683668166852
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 0,
+                    "id": 2,
+                    "tag": "Environment/Cumulative Reward",
+                    "mean_value": 10.612933225631714,
+                    "std_value": 2.659049482325796
+                }
+            ]
+        },
+        "1_5": {
+            "winning_id": 1,
+            "important_tags": [
+                "Environment/Cumulative Reward"
+            ],
+            "mean_values": [
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 1,
+                    "id": 1,
+                    "tag": "DroneBasedReforestation/Cumulative Distance Reward",
+                    "mean_value": 0.0,
+                    "std_value": 0.0
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 1,
+                    "id": 1,
+                    "tag": "DroneBasedReforestation/Cumulative Distance Until Tree Drop",
+                    "mean_value": 0.0,
+                    "std_value": 0.0
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 1,
+                    "id": 1,
+                    "tag": "DroneBasedReforestation/Cumulative Distance to Existing Trees",
+                    "mean_value": 0.0,
+                    "std_value": 0.0
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 1,
+                    "id": 1,
+                    "tag": "DroneBasedReforestation/Cumulative Normalized Distance Until Tree Drop",
+                    "mean_value": 0.0,
+                    "std_value": 0.0
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 1,
+                    "id": 1,
+                    "tag": "DroneBasedReforestation/Cumulative Tree Drop Reward",
+                    "mean_value": 0.0,
+                    "std_value": 0.0
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 1,
+                    "id": 1,
+                    "tag": "DroneBasedReforestation/Out of Energy Count",
+                    "mean_value": 0.013677190858870744,
+                    "std_value": 0.015857580403509562
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 1,
+                    "id": 1,
+                    "tag": "DroneBasedReforestation/Recharge Energy Count",
+                    "mean_value": 0.0,
+                    "std_value": 0.0
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 1,
+                    "id": 1,
+                    "tag": "DroneBasedReforestation/Save Location Count",
+                    "mean_value": 0.0,
+                    "std_value": 0.0
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 1,
+                    "id": 1,
+                    "tag": "DroneBasedReforestation/Tree Drop Count",
+                    "mean_value": 0.0,
+                    "std_value": 0.0
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 1,
+                    "id": 1,
+                    "tag": "Environment/Cumulative Reward",
+                    "mean_value": 98.19454025268554,
+                    "std_value": 2.013315524136616
+                }
+            ]
+        },
+        "2_5": {
+            "winning_id": 2,
+            "important_tags": [
+                "DroneBasedReforestation/Recharge Energy Count"
+            ],
+            "mean_values": [
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 2,
+                    "id": 2,
+                    "tag": "DroneBasedReforestation/Cumulative Distance Reward",
+                    "mean_value": 0.0,
+                    "std_value": 0.0
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 2,
+                    "id": 2,
+                    "tag": "DroneBasedReforestation/Cumulative Distance Until Tree Drop",
+                    "mean_value": 0.0,
+                    "std_value": 0.0
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 2,
+                    "id": 2,
+                    "tag": "DroneBasedReforestation/Cumulative Distance to Existing Trees",
+                    "mean_value": 0.0,
+                    "std_value": 0.0
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 2,
+                    "id": 2,
+                    "tag": "DroneBasedReforestation/Cumulative Normalized Distance Until Tree Drop",
+                    "mean_value": 0.0,
+                    "std_value": 0.0
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 2,
+                    "id": 2,
+                    "tag": "DroneBasedReforestation/Cumulative Tree Drop Reward",
+                    "mean_value": 0.0,
+                    "std_value": 0.0
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 2,
+                    "id": 2,
+                    "tag": "DroneBasedReforestation/Out of Energy Count",
+                    "mean_value": 0.5702619183063508,
+                    "std_value": 0.07710102619282291
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 2,
+                    "id": 2,
+                    "tag": "DroneBasedReforestation/Recharge Energy Count",
+                    "mean_value": 164.77283651448786,
+                    "std_value": 105.66051729333431
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 2,
+                    "id": 2,
+                    "tag": "DroneBasedReforestation/Save Location Count",
+                    "mean_value": 0.0,
+                    "std_value": 0.0
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 2,
+                    "id": 2,
+                    "tag": "DroneBasedReforestation/Tree Drop Count",
+                    "mean_value": 0.0,
+                    "std_value": 0.0
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 2,
+                    "id": 2,
+                    "tag": "Environment/Cumulative Reward",
+                    "mean_value": 14.895887972116471,
+                    "std_value": 7.701409987004873
+                }
+            ]
+        },
+        "3_5": {
+            "winning_id": 2,
+            "important_tags": [
+                "Environment/Cumulative Reward"
+            ],
+            "mean_values": [
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 3,
+                    "id": 2,
+                    "tag": "DroneBasedReforestation/Cumulative Distance Reward",
+                    "mean_value": 1.317925215959549,
+                    "std_value": 0.28260177110908363
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 3,
+                    "id": 2,
+                    "tag": "DroneBasedReforestation/Cumulative Distance Until Tree Drop",
+                    "mean_value": 48.28620391845703,
+                    "std_value": 7.283860263327832
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 3,
+                    "id": 2,
+                    "tag": "DroneBasedReforestation/Cumulative Distance to Existing Trees",
+                    "mean_value": 64.57429847717285,
+                    "std_value": 5.444324231140867
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 3,
+                    "id": 2,
+                    "tag": "DroneBasedReforestation/Cumulative Normalized Distance Until Tree Drop",
+                    "mean_value": 0.13179252222180365,
+                    "std_value": 0.02826017752675318
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 3,
+                    "id": 2,
+                    "tag": "DroneBasedReforestation/Cumulative Tree Drop Reward",
+                    "mean_value": 4.009531931877136,
+                    "std_value": 0.661158168654566
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 3,
+                    "id": 2,
+                    "tag": "DroneBasedReforestation/Out of Energy Count",
+                    "mean_value": 0.03808173710480332,
+                    "std_value": 0.021781055433560147
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 3,
+                    "id": 2,
+                    "tag": "DroneBasedReforestation/Recharge Energy Count",
+                    "mean_value": 10.746735401153565,
+                    "std_value": 0.6862137746749559
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 3,
+                    "id": 2,
+                    "tag": "DroneBasedReforestation/Save Location Count",
+                    "mean_value": 0.0,
+                    "std_value": 0.0
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 3,
+                    "id": 2,
+                    "tag": "DroneBasedReforestation/Tree Drop Count",
+                    "mean_value": 0.9473729825019837,
+                    "std_value": 0.03268839810742225
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 3,
+                    "id": 2,
+                    "tag": "Environment/Cumulative Reward",
+                    "mean_value": 101.15483459472657,
+                    "std_value": 3.824644657818079
+                }
+            ]
+        },
+        "4_5": {
+            "winning_id": 2,
+            "important_tags": [
+                "DroneBasedReforestation/Highest Potential Soild Found"
+            ],
+            "mean_values": [
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 4,
+                    "id": 2,
+                    "tag": "DroneBasedReforestation/Cumulative Distance Reward",
+                    "mean_value": 0.0,
+                    "std_value": 0.0
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 4,
+                    "id": 2,
+                    "tag": "DroneBasedReforestation/Cumulative Distance Until Tree Drop",
+                    "mean_value": 0.0,
+                    "std_value": 0.0
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 4,
+                    "id": 2,
+                    "tag": "DroneBasedReforestation/Cumulative Distance to Existing Trees",
+                    "mean_value": 0.0,
+                    "std_value": 0.0
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 4,
+                    "id": 2,
+                    "tag": "DroneBasedReforestation/Cumulative Normalized Distance Until Tree Drop",
+                    "mean_value": 0.0,
+                    "std_value": 0.0
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 4,
+                    "id": 2,
+                    "tag": "DroneBasedReforestation/Cumulative Tree Drop Reward",
+                    "mean_value": 0.0,
+                    "std_value": 0.0
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 4,
+                    "id": 2,
+                    "tag": "DroneBasedReforestation/Highest Potential Soild Found",
+                    "mean_value": 0.9688162982463837,
+                    "std_value": 0.03514935896725512
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 4,
+                    "id": 2,
+                    "tag": "DroneBasedReforestation/Out of Energy Count",
+                    "mean_value": 0.6642222416400909,
+                    "std_value": 0.0670919881726494
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 4,
+                    "id": 2,
+                    "tag": "DroneBasedReforestation/Recharge Energy Count",
+                    "mean_value": 0.0,
+                    "std_value": 0.0
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 4,
+                    "id": 2,
+                    "tag": "DroneBasedReforestation/Save Location Count",
+                    "mean_value": 0.0,
+                    "std_value": 0.0
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 4,
+                    "id": 2,
+                    "tag": "DroneBasedReforestation/Tree Drop Count",
+                    "mean_value": 0.0,
+                    "std_value": 0.0
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 4,
+                    "id": 2,
+                    "tag": "Environment/Cumulative Reward",
+                    "mean_value": -0.02769417219361685,
+                    "std_value": 0.028260583915391758
+                }
+            ]
+        },
+        "5_5": {
+            "winning_id": 1,
+            "important_tags": [
+                "DroneBasedReforestation/Highest Point on Terrain Found"
+            ],
+            "mean_values": [
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 5,
+                    "id": 1,
+                    "tag": "DroneBasedReforestation/Cumulative Distance Reward",
+                    "mean_value": 0.0,
+                    "std_value": 0.0
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 5,
+                    "id": 1,
+                    "tag": "DroneBasedReforestation/Cumulative Distance Until Tree Drop",
+                    "mean_value": 0.0,
+                    "std_value": 0.0
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 5,
+                    "id": 1,
+                    "tag": "DroneBasedReforestation/Cumulative Distance to Existing Trees",
+                    "mean_value": 0.0,
+                    "std_value": 0.0
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 5,
+                    "id": 1,
+                    "tag": "DroneBasedReforestation/Cumulative Normalized Distance Until Tree Drop",
+                    "mean_value": 0.0,
+                    "std_value": 0.0
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 5,
+                    "id": 1,
+                    "tag": "DroneBasedReforestation/Cumulative Tree Drop Reward",
+                    "mean_value": 0.0,
+                    "std_value": 0.0
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 5,
+                    "id": 1,
+                    "tag": "DroneBasedReforestation/Highest Point on Terrain Found",
+                    "mean_value": 45.869091567993166,
+                    "std_value": 4.999313768229945
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 5,
+                    "id": 1,
+                    "tag": "DroneBasedReforestation/Out of Energy Count",
+                    "mean_value": 0.6642222416400909,
+                    "std_value": 0.0670919881726494
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 5,
+                    "id": 1,
+                    "tag": "DroneBasedReforestation/Recharge Energy Count",
+                    "mean_value": 0.0,
+                    "std_value": 0.0
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 5,
+                    "id": 1,
+                    "tag": "DroneBasedReforestation/Save Location Count",
+                    "mean_value": 0.0,
+                    "std_value": 0.0
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 5,
+                    "id": 1,
+                    "tag": "DroneBasedReforestation/Tree Drop Count",
+                    "mean_value": 0.0,
+                    "std_value": 0.0
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 5,
+                    "id": 1,
+                    "tag": "Environment/Cumulative Reward",
+                    "mean_value": 45.00607933044434,
+                    "std_value": 4.64965523948756
+                }
+            ]
+        },
+        "6_5": {
+            "winning_id": 1,
+            "important_tags": [
+                "DroneBasedReforestation/Furthest Distance Explored"
+            ],
+            "mean_values": [
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 6,
+                    "id": 1,
+                    "tag": "DroneBasedReforestation/Cumulative Distance Reward",
+                    "mean_value": 0.0,
+                    "std_value": 0.0
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 6,
+                    "id": 1,
+                    "tag": "DroneBasedReforestation/Cumulative Distance Until Tree Drop",
+                    "mean_value": 0.0,
+                    "std_value": 0.0
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 6,
+                    "id": 1,
+                    "tag": "DroneBasedReforestation/Cumulative Distance to Existing Trees",
+                    "mean_value": 0.0,
+                    "std_value": 0.0
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 6,
+                    "id": 1,
+                    "tag": "DroneBasedReforestation/Cumulative Normalized Distance Until Tree Drop",
+                    "mean_value": 0.0,
+                    "std_value": 0.0
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 6,
+                    "id": 1,
+                    "tag": "DroneBasedReforestation/Cumulative Tree Drop Reward",
+                    "mean_value": 0.0,
+                    "std_value": 0.0
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 6,
+                    "id": 1,
+                    "tag": "DroneBasedReforestation/Furthest Distance Explored",
+                    "mean_value": 137.37953353881835,
+                    "std_value": 12.615748983046979
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 6,
+                    "id": 1,
+                    "tag": "DroneBasedReforestation/Out of Energy Count",
+                    "mean_value": 0.6040635073184967,
+                    "std_value": 0.08043410811022636
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 6,
+                    "id": 1,
+                    "tag": "DroneBasedReforestation/Recharge Energy Count",
+                    "mean_value": 106.3367606653273,
+                    "std_value": 119.63729576848576
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 6,
+                    "id": 1,
+                    "tag": "DroneBasedReforestation/Save Location Count",
+                    "mean_value": 0.0,
+                    "std_value": 0.0
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 6,
+                    "id": 1,
+                    "tag": "DroneBasedReforestation/Tree Drop Count",
+                    "mean_value": 0.0,
+                    "std_value": 0.0
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 6,
+                    "id": 1,
+                    "tag": "Environment/Cumulative Reward",
+                    "mean_value": 3.9467455238103866,
+                    "std_value": 4.488707334085729
+                }
+            ]
+        }
+    },
+    "OceanPlasticCollector": {
+        "0_None": {
+            "winning_id": 0,
+            "important_tags": [
+                "Environment/Cumulative Reward"
+            ],
+            "mean_values": [
+                {
+                    "difficulty_or_pattern_value": "None",
+                    "task": 0,
+                    "id": 0,
+                    "tag": "Environment/Cumulative Reward",
+                    "mean_value": 823.2983947753906,
+                    "std_value": 197.42713024318527
+                },
+                {
+                    "difficulty_or_pattern_value": "None",
+                    "task": 0,
+                    "id": 0,
+                    "tag": "OceanPlasticCollector/Global Reward",
+                    "mean_value": 285.8913818359375,
+                    "std_value": 84.43798423128938
+                },
+                {
+                    "difficulty_or_pattern_value": "None",
+                    "task": 0,
+                    "id": 0,
+                    "tag": "OceanPlasticCollector/Local Reward",
+                    "mean_value": 158.69510040283203,
+                    "std_value": 32.16273712262643
+                }
+            ]
+        },
+        "1_None": {
+            "winning_id": 0,
+            "important_tags": [
+                "Environment/Cumulative Reward"
+            ],
+            "mean_values": [
+                {
+                    "difficulty_or_pattern_value": "None",
+                    "task": 1,
+                    "id": 0,
+                    "tag": "Environment/Cumulative Reward",
+                    "mean_value": 994.6653747558594,
+                    "std_value": 158.13702190020126
+                },
+                {
+                    "difficulty_or_pattern_value": "None",
+                    "task": 1,
+                    "id": 0,
+                    "tag": "OceanPlasticCollector/Global Reward",
+                    "mean_value": 226.50474700927734,
+                    "std_value": 57.553598550844015
+                },
+                {
+                    "difficulty_or_pattern_value": "None",
+                    "task": 1,
+                    "id": 0,
+                    "tag": "OceanPlasticCollector/Local Reward",
+                    "mean_value": 142.19907608032227,
+                    "std_value": 19.368785745326573
+                }
+            ]
+        },
+        "2_None": {
+            "winning_id": 1,
+            "important_tags": [
+                "Environment/Cumulative Reward"
+            ],
+            "mean_values": [
+                {
+                    "difficulty_or_pattern_value": "None",
+                    "task": 2,
+                    "id": 1,
+                    "tag": "Environment/Cumulative Reward",
+                    "mean_value": 868.6791931152344,
+                    "std_value": 177.8582676854445
+                },
+                {
+                    "difficulty_or_pattern_value": "None",
+                    "task": 2,
+                    "id": 1,
+                    "tag": "OceanPlasticCollector/Global Reward",
+                    "mean_value": 294.7176452636719,
+                    "std_value": 58.7408861442478
+                },
+                {
+                    "difficulty_or_pattern_value": "None",
+                    "task": 2,
+                    "id": 1,
+                    "tag": "OceanPlasticCollector/Local Reward",
+                    "mean_value": 165.2141372680664,
+                    "std_value": 20.43658256777414
+                }
+            ]
+        },
+        "3_None": {
+            "winning_id": 2,
+            "important_tags": [
+                "Environment/Cumulative Reward"
+            ],
+            "mean_values": [
+                {
+                    "difficulty_or_pattern_value": "None",
+                    "task": 3,
+                    "id": 2,
+                    "tag": "Environment/Cumulative Reward",
+                    "mean_value": -2.0388235569000246,
+                    "std_value": 1.647487721687271
+                },
+                {
+                    "difficulty_or_pattern_value": "None",
+                    "task": 3,
+                    "id": 2,
+                    "tag": "OceanPlasticCollector/Global Reward",
+                    "mean_value": 0.0,
+                    "std_value": 0.0
+                },
+                {
+                    "difficulty_or_pattern_value": "None",
+                    "task": 3,
+                    "id": 2,
+                    "tag": "OceanPlasticCollector/Local Reward",
+                    "mean_value": -2.854285717010498,
+                    "std_value": 1.1865717722656555
+                }
+            ]
+        }
+    },
+    "AerialWildfireSuppression": {
+        "0_5": {
+            "winning_id": 2,
+            "important_tags": [
+                "Environment/Cumulative Reward"
+            ],
+            "mean_values": [
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 0,
+                    "id": 2,
+                    "tag": "AerialWildfireSuppression/Crash Count",
+                    "mean_value": 0.10833333656191826,
+                    "std_value": 0.13545462085140367
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 0,
+                    "id": 2,
+                    "tag": "AerialWildfireSuppression/Extinguishing Trees",
+                    "mean_value": 21.558333230018615,
+                    "std_value": 22.116535318538975
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 0,
+                    "id": 2,
+                    "tag": "AerialWildfireSuppression/Extinguishing Trees Reward",
+                    "mean_value": 107.79166641235352,
+                    "std_value": 110.58267924973548
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 0,
+                    "id": 2,
+                    "tag": "AerialWildfireSuppression/Fire Out",
+                    "mean_value": 0.3250000037252903,
+                    "std_value": 0.352414398829495
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 0,
+                    "id": 2,
+                    "tag": "AerialWildfireSuppression/Fire too Close to City",
+                    "mean_value": 0.975,
+                    "std_value": 0.11180339887498947
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 0,
+                    "id": 2,
+                    "tag": "AerialWildfireSuppression/Preparing Trees",
+                    "mean_value": 906.383334851265,
+                    "std_value": 686.9466761748455
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 0,
+                    "id": 2,
+                    "tag": "AerialWildfireSuppression/Preparing Trees Reward",
+                    "mean_value": 906.383334851265,
+                    "std_value": 686.9466761748455
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 0,
+                    "id": 2,
+                    "tag": "AerialWildfireSuppression/Water Drop",
+                    "mean_value": 42.29166712760925,
+                    "std_value": 14.596310384142566
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 0,
+                    "id": 2,
+                    "tag": "AerialWildfireSuppression/Water Pickup",
+                    "mean_value": 41.733333349227905,
+                    "std_value": 14.532822126312558
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 0,
+                    "id": 2,
+                    "tag": "Environment/Cumulative Reward",
+                    "mean_value": 1040.6658332824707,
+                    "std_value": 651.2068293319696
+                }
+            ]
+        },
+        "1_5": {
+            "winning_id": 2,
+            "important_tags": [
+                "AerialWildfireSuppression/Extinguishing Trees Reward"
+            ],
+            "mean_values": [
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 1,
+                    "id": 2,
+                    "tag": "AerialWildfireSuppression/Crash Count",
+                    "mean_value": 0.15833333656191825,
+                    "std_value": 0.19098850564751765
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 1,
+                    "id": 2,
+                    "tag": "AerialWildfireSuppression/Extinguishing Trees",
+                    "mean_value": 20.000000047683717,
+                    "std_value": 35.87091048765571
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 1,
+                    "id": 2,
+                    "tag": "AerialWildfireSuppression/Extinguishing Trees Reward",
+                    "mean_value": 999.9999992370606,
+                    "std_value": 1793.545528264617
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 1,
+                    "id": 2,
+                    "tag": "AerialWildfireSuppression/Fire Out",
+                    "mean_value": 0.10000000298023223,
+                    "std_value": 0.244231706300354
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 1,
+                    "id": 2,
+                    "tag": "AerialWildfireSuppression/Fire too Close to City",
+                    "mean_value": 0.925,
+                    "std_value": 0.24468024246479642
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 1,
+                    "id": 2,
+                    "tag": "AerialWildfireSuppression/Preparing Trees",
+                    "mean_value": 439.2000018119812,
+                    "std_value": 486.4487458526075
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 1,
+                    "id": 2,
+                    "tag": "AerialWildfireSuppression/Preparing Trees Reward",
+                    "mean_value": 439.2000018119812,
+                    "std_value": 486.4487458526075
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 1,
+                    "id": 2,
+                    "tag": "AerialWildfireSuppression/Water Drop",
+                    "mean_value": 35.9416666328907,
+                    "std_value": 21.80430457793747
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 1,
+                    "id": 2,
+                    "tag": "AerialWildfireSuppression/Water Pickup",
+                    "mean_value": 35.77500002980232,
+                    "std_value": 21.714001930720748
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 1,
+                    "id": 2,
+                    "tag": "Environment/Cumulative Reward",
+                    "mean_value": 1192.8983428001404,
+                    "std_value": 1401.6480393641084
+                }
+            ]
+        },
+        "2_5": {
+            "winning_id": 1,
+            "important_tags": [
+                "AerialWildfireSuppression/Preparing Trees Reward"
+            ],
+            "mean_values": [
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 2,
+                    "id": 1,
+                    "tag": "AerialWildfireSuppression/Crash Count",
+                    "mean_value": 0.25000000521540644,
+                    "std_value": 0.26765169236445613
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 2,
+                    "id": 1,
+                    "tag": "AerialWildfireSuppression/Extinguishing Trees",
+                    "mean_value": 26.541666515916585,
+                    "std_value": 71.99835260789617
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 2,
+                    "id": 1,
+                    "tag": "AerialWildfireSuppression/Extinguishing Trees Reward",
+                    "mean_value": 132.70833393633364,
+                    "std_value": 359.9917639236706
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 2,
+                    "id": 1,
+                    "tag": "AerialWildfireSuppression/Fire Out",
+                    "mean_value": 0.1916666693985462,
+                    "std_value": 0.3301381975702533
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 2,
+                    "id": 1,
+                    "tag": "AerialWildfireSuppression/Fire too Close to City",
+                    "mean_value": 0.975,
+                    "std_value": 0.11180339887498947
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 2,
+                    "id": 1,
+                    "tag": "AerialWildfireSuppression/Preparing Trees",
+                    "mean_value": 884.999996471405,
+                    "std_value": 751.8528699660257
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 2,
+                    "id": 1,
+                    "tag": "AerialWildfireSuppression/Preparing Trees Reward",
+                    "mean_value": 4425.0000263214115,
+                    "std_value": 3759.264413506219
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 2,
+                    "id": 1,
+                    "tag": "AerialWildfireSuppression/Water Drop",
+                    "mean_value": 53.89166679382324,
+                    "std_value": 27.40039192850323
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 2,
+                    "id": 1,
+                    "tag": "AerialWildfireSuppression/Water Pickup",
+                    "mean_value": 53.56666660308838,
+                    "std_value": 27.298244112627053
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 2,
+                    "id": 1,
+                    "tag": "Environment/Cumulative Reward",
+                    "mean_value": 5174.121683979034,
+                    "std_value": 4124.406680944283
+                }
+            ]
+        },
+        "3_5": {
+            "winning_id": 1,
+            "important_tags": [
+                "AerialWildfireSuppression/Fire Out"
+            ],
+            "mean_values": [
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 3,
+                    "id": 1,
+                    "tag": "AerialWildfireSuppression/Crash Count",
+                    "mean_value": 0.10000000298023223,
+                    "std_value": 0.14709666274350333
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 3,
+                    "id": 1,
+                    "tag": "AerialWildfireSuppression/Extinguishing Trees",
+                    "mean_value": 21.849999871850013,
+                    "std_value": 26.55595966139508
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 3,
+                    "id": 1,
+                    "tag": "AerialWildfireSuppression/Extinguishing Trees Reward",
+                    "mean_value": 109.25000078678131,
+                    "std_value": 132.77980124383632
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 3,
+                    "id": 1,
+                    "tag": "AerialWildfireSuppression/Fire Out",
+                    "mean_value": 0.2833333373069763,
+                    "std_value": 0.3903065252105535
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 3,
+                    "id": 1,
+                    "tag": "AerialWildfireSuppression/Fire too Close to City",
+                    "mean_value": 0.975,
+                    "std_value": 0.11180339887498947
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 3,
+                    "id": 1,
+                    "tag": "AerialWildfireSuppression/Preparing Trees",
+                    "mean_value": 720.8999999046325,
+                    "std_value": 714.1611892677554
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 3,
+                    "id": 1,
+                    "tag": "AerialWildfireSuppression/Preparing Trees Reward",
+                    "mean_value": 720.8999999046325,
+                    "std_value": 714.1611892677554
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 3,
+                    "id": 1,
+                    "tag": "AerialWildfireSuppression/Water Drop",
+                    "mean_value": 43.80000042915344,
+                    "std_value": 23.772717959813576
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 3,
+                    "id": 1,
+                    "tag": "AerialWildfireSuppression/Water Pickup",
+                    "mean_value": 43.35833301544189,
+                    "std_value": 23.80096972956163
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 3,
+                    "id": 1,
+                    "tag": "Environment/Cumulative Reward",
+                    "mean_value": 972.7084733963013,
+                    "std_value": 771.3352656170343
+                }
+            ]
+        },
+        "4_5": {
+            "winning_id": 0,
+            "important_tags": [
+                "AerialWildfireSuppression/Fire too Close to City"
+            ],
+            "mean_values": [
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 4,
+                    "id": 0,
+                    "tag": "AerialWildfireSuppression/Crash Count",
+                    "mean_value": 0.9886904746294022,
+                    "std_value": 0.02771131517144696
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 4,
+                    "id": 0,
+                    "tag": "AerialWildfireSuppression/Extinguishing Trees",
+                    "mean_value": 0.08853785246610642,
+                    "std_value": 0.18335850809661372
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 4,
+                    "id": 0,
+                    "tag": "AerialWildfireSuppression/Extinguishing Trees Reward",
+                    "mean_value": 0.4426892638206482,
+                    "std_value": 0.9167925407962902
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 4,
+                    "id": 0,
+                    "tag": "AerialWildfireSuppression/Fire Out",
+                    "mean_value": 0.00773809552192688,
+                    "std_value": 0.02389552224594306
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 4,
+                    "id": 0,
+                    "tag": "AerialWildfireSuppression/Fire too Close to City",
+                    "mean_value": 0.008712121471762656,
+                    "std_value": 0.026843490782201274
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 4,
+                    "id": 0,
+                    "tag": "AerialWildfireSuppression/Preparing Trees",
+                    "mean_value": 273.38488922119143,
+                    "std_value": 40.98115816740078
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 4,
+                    "id": 0,
+                    "tag": "AerialWildfireSuppression/Preparing Trees Reward",
+                    "mean_value": 273.38488922119143,
+                    "std_value": 40.98115816740078
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 4,
+                    "id": 0,
+                    "tag": "AerialWildfireSuppression/Water Drop",
+                    "mean_value": 1.757782220840454,
+                    "std_value": 0.286049469501929
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 4,
+                    "id": 0,
+                    "tag": "AerialWildfireSuppression/Water Pickup",
+                    "mean_value": 1.7500441253185273,
+                    "std_value": 0.2868768059725031
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 4,
+                    "id": 0,
+                    "tag": "Environment/Cumulative Reward",
+                    "mean_value": 172.30555000305176,
+                    "std_value": 38.100567507916715
+                }
+            ]
+        },
+        "5_5": {
+            "winning_id": 2,
+            "important_tags": [
+                "AerialWildfireSuppression/Water Pickup"
+            ],
+            "mean_values": [
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 5,
+                    "id": 2,
+                    "tag": "AerialWildfireSuppression/Crash Count",
+                    "mean_value": 0.0,
+                    "std_value": 0.0
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 5,
+                    "id": 2,
+                    "tag": "AerialWildfireSuppression/Extinguishing Trees",
+                    "mean_value": 0.0,
+                    "std_value": 0.0
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 5,
+                    "id": 2,
+                    "tag": "AerialWildfireSuppression/Extinguishing Trees Reward",
+                    "mean_value": 0.0,
+                    "std_value": 0.0
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 5,
+                    "id": 2,
+                    "tag": "AerialWildfireSuppression/Fire Out",
+                    "mean_value": 0.0,
+                    "std_value": 0.0
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 5,
+                    "id": 2,
+                    "tag": "AerialWildfireSuppression/Fire too Close to City",
+                    "mean_value": 0.0,
+                    "std_value": 0.0
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 5,
+                    "id": 2,
+                    "tag": "AerialWildfireSuppression/Preparing Trees",
+                    "mean_value": 0.0,
+                    "std_value": 0.0
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 5,
+                    "id": 2,
+                    "tag": "AerialWildfireSuppression/Preparing Trees Reward",
+                    "mean_value": 0.0,
+                    "std_value": 0.0
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 5,
+                    "id": 2,
+                    "tag": "AerialWildfireSuppression/Water Drop",
+                    "mean_value": 0.0,
+                    "std_value": 0.0
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 5,
+                    "id": 2,
+                    "tag": "AerialWildfireSuppression/Water Pickup",
+                    "mean_value": 0.997826087474823,
+                    "std_value": 0.009722032366868
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 5,
+                    "id": 2,
+                    "tag": "Environment/Cumulative Reward",
+                    "mean_value": 94.74313354492188,
+                    "std_value": 0.3109783141391039
+                }
+            ]
+        },
+        "6_5": {
+            "winning_id": 2,
+            "important_tags": [
+                "AerialWildfireSuppression/Water Drop"
+            ],
+            "mean_values": [
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 6,
+                    "id": 2,
+                    "tag": "AerialWildfireSuppression/Crash Count",
+                    "mean_value": 0.022751575300935654,
+                    "std_value": 0.009602885208751202
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 6,
+                    "id": 2,
+                    "tag": "AerialWildfireSuppression/Extinguishing Trees",
+                    "mean_value": 0.2077373639680445,
+                    "std_value": 0.1507774190085061
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 6,
+                    "id": 2,
+                    "tag": "AerialWildfireSuppression/Extinguishing Trees Reward",
+                    "mean_value": 1.0386868014931678,
+                    "std_value": 0.753887068245034
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 6,
+                    "id": 2,
+                    "tag": "AerialWildfireSuppression/Fire Out",
+                    "mean_value": 0.0,
+                    "std_value": 0.0
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 6,
+                    "id": 2,
+                    "tag": "AerialWildfireSuppression/Fire too Close to City",
+                    "mean_value": 0.0,
+                    "std_value": 0.0
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 6,
+                    "id": 2,
+                    "tag": "AerialWildfireSuppression/Preparing Trees",
+                    "mean_value": 275.6179458618164,
+                    "std_value": 12.486733727275665
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 6,
+                    "id": 2,
+                    "tag": "AerialWildfireSuppression/Preparing Trees Reward",
+                    "mean_value": 275.6179458618164,
+                    "std_value": 12.486733727275665
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 6,
+                    "id": 2,
+                    "tag": "AerialWildfireSuppression/Water Drop",
+                    "mean_value": 0.9767484277486801,
+                    "std_value": 0.00989079886411895
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 6,
+                    "id": 2,
+                    "tag": "AerialWildfireSuppression/Water Pickup",
+                    "mean_value": 0.0005922459880821407,
+                    "std_value": 0.0015700193469281448
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 6,
+                    "id": 2,
+                    "tag": "Environment/Cumulative Reward",
+                    "mean_value": 274.48731155395507,
+                    "std_value": 13.254462171454286
+                }
+            ]
+        },
+        "7_5": {
+            "winning_id": 1,
+            "important_tags": [
+                "Environment/Cumulative Reward"
+            ],
+            "mean_values": [
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 7,
+                    "id": 1,
+                    "tag": "AerialWildfireSuppression/Crash Count",
+                    "mean_value": 0.17930555799975992,
+                    "std_value": 0.2609329311689266
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 7,
+                    "id": 1,
+                    "tag": "AerialWildfireSuppression/Extinguishing Trees",
+                    "mean_value": 0.0,
+                    "std_value": 0.0
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 7,
+                    "id": 1,
+                    "tag": "AerialWildfireSuppression/Extinguishing Trees Reward",
+                    "mean_value": 0.0,
+                    "std_value": 0.0
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 7,
+                    "id": 1,
+                    "tag": "AerialWildfireSuppression/Fire Out",
+                    "mean_value": 0.0,
+                    "std_value": 0.0
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 7,
+                    "id": 1,
+                    "tag": "AerialWildfireSuppression/Fire too Close to City",
+                    "mean_value": 0.0,
+                    "std_value": 0.0
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 7,
+                    "id": 1,
+                    "tag": "AerialWildfireSuppression/Preparing Trees",
+                    "mean_value": 0.0,
+                    "std_value": 0.0
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 7,
+                    "id": 1,
+                    "tag": "AerialWildfireSuppression/Preparing Trees Reward",
+                    "mean_value": 0.0,
+                    "std_value": 0.0
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 7,
+                    "id": 1,
+                    "tag": "AerialWildfireSuppression/Water Drop",
+                    "mean_value": 0.0,
+                    "std_value": 0.0
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 7,
+                    "id": 1,
+                    "tag": "AerialWildfireSuppression/Water Pickup",
+                    "mean_value": 0.0,
+                    "std_value": 0.0
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 7,
+                    "id": 1,
+                    "tag": "Environment/Cumulative Reward",
+                    "mean_value": 53.73797006607056,
+                    "std_value": 38.52604677018771
+                }
+            ]
+        },
+        "8_5": {
+            "winning_id": 2,
+            "important_tags": [
+                "Environment/Cumulative Reward"
+            ],
+            "mean_values": [
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 8,
+                    "id": 2,
+                    "tag": "AerialWildfireSuppression/Crash Count",
+                    "mean_value": 0.07500000223517418,
+                    "std_value": 0.12652577952347
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 8,
+                    "id": 2,
+                    "tag": "AerialWildfireSuppression/Extinguishing Trees",
+                    "mean_value": 0.0,
+                    "std_value": 0.0
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 8,
+                    "id": 2,
+                    "tag": "AerialWildfireSuppression/Extinguishing Trees Reward",
+                    "mean_value": 0.0,
+                    "std_value": 0.0
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 8,
+                    "id": 2,
+                    "tag": "AerialWildfireSuppression/Fire Out",
+                    "mean_value": 0.0,
+                    "std_value": 0.0
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 8,
+                    "id": 2,
+                    "tag": "AerialWildfireSuppression/Fire too Close to City",
+                    "mean_value": 0.0,
+                    "std_value": 0.0
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 8,
+                    "id": 2,
+                    "tag": "AerialWildfireSuppression/Preparing Trees",
+                    "mean_value": 0.0,
+                    "std_value": 0.0
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 8,
+                    "id": 2,
+                    "tag": "AerialWildfireSuppression/Preparing Trees Reward",
+                    "mean_value": 0.0,
+                    "std_value": 0.0
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 8,
+                    "id": 2,
+                    "tag": "AerialWildfireSuppression/Water Drop",
+                    "mean_value": 0.0,
+                    "std_value": 0.0
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 8,
+                    "id": 2,
+                    "tag": "AerialWildfireSuppression/Water Pickup",
+                    "mean_value": 0.0,
+                    "std_value": 0.0
+                },
+                {
+                    "difficulty_or_pattern_value": 5,
+                    "task": 8,
+                    "id": 2,
+                    "tag": "Environment/Cumulative Reward",
+                    "mean_value": 13.988095474243163,
+                    "std_value": 35.57381504941489
+                }
+            ]
+        }
+    }
+}
