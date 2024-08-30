@@ -1,0 +1,71 @@
+{
+    "pattern": {
+        "lesson_num": 0
+    },
+    "task": {
+        "lesson_num": 0
+    },
+    "Agent": {
+        "checkpoints": [
+            {
+                "steps": 6498432,
+                "file_path": "results\\WindFarmControl/test/WindFarmControl_pattern_0_task_0_run_id_1_test\\Agent\\Agent-6498432.onnx",
+                "reward": null,
+                "creation_time": 1715461802.0195806,
+                "auxillary_file_paths": [
+                    "results\\WindFarmControl/test/WindFarmControl_pattern_0_task_0_run_id_1_test\\Agent\\Agent-6498432.pt"
+                ]
+            },
+            {
+                "steps": 6999096,
+                "file_path": "results\\WindFarmControl/test/WindFarmControl_pattern_0_task_0_run_id_1_test\\Agent\\Agent-6999096.onnx",
+                "reward": 4628.198233468192,
+                "creation_time": 1715462024.9599023,
+                "auxillary_file_paths": [
+                    "results\\WindFarmControl/test/WindFarmControl_pattern_0_task_0_run_id_1_test\\Agent\\Agent-6999096.pt"
+                ]
+            },
+            {
+                "steps": 7498432,
+                "file_path": "results\\WindFarmControl/test/WindFarmControl_pattern_0_task_0_run_id_1_test\\Agent\\Agent-7498432.onnx",
+                "reward": null,
+                "creation_time": 1715462255.7698276,
+                "auxillary_file_paths": [
+                    "results\\WindFarmControl/test/WindFarmControl_pattern_0_task_0_run_id_1_test\\Agent\\Agent-7498432.pt"
+                ]
+            },
+            {
+                "steps": 7999096,
+                "file_path": "results\\WindFarmControl/test/WindFarmControl_pattern_0_task_0_run_id_1_test\\Agent\\Agent-7999096.onnx",
+                "reward": 4590.34077671596,
+                "creation_time": 1715462478.3042574,
+                "auxillary_file_paths": [
+                    "results\\WindFarmControl/test/WindFarmControl_pattern_0_task_0_run_id_1_test\\Agent\\Agent-7999096.pt"
+                ]
+            },
+            {
+                "steps": 8016384,
+                "file_path": "results\\WindFarmControl/test/WindFarmControl_pattern_0_task_0_run_id_1_test\\Agent\\Agent-8016384.onnx",
+                "reward": null,
+                "creation_time": 1715462484.5491264,
+                "auxillary_file_paths": [
+                    "results\\WindFarmControl/test/WindFarmControl_pattern_0_task_0_run_id_1_test\\Agent\\Agent-8016384.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 8016384,
+            "file_path": "results\\WindFarmControl/test/WindFarmControl_pattern_0_task_0_run_id_1_test\\Agent.onnx",
+            "reward": null,
+            "creation_time": 1715462484.5491264,
+            "auxillary_file_paths": [
+                "results\\WindFarmControl/test/WindFarmControl_pattern_0_task_0_run_id_1_test\\Agent\\Agent-8016384.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}
