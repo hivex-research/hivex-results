@@ -19,7 +19,7 @@ This repository holds all result plots and the script to create such. Due to siz
 <br>
 <br>
 
-# Submit your own Results to the [HIVEX Leaderboard](https://huggingface.co/spaces/hivex-research/hivex-leaderboard) on Huggingface 🤗
+# ✨ Submit your own Results to the [HIVEX Leaderboard](https://huggingface.co/spaces/hivex-research/hivex-leaderboard) on Huggingface 🤗
 
 1. Install all dependencies as described in the [HIVEX repository README](https://github.com/hivex-research/hivex/tree/main).
 
