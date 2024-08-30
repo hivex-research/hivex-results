@@ -1,11 +1,8 @@
 import tensorflow as tf
-import seaborn as sns
-import matplotlib.pyplot as plt
 from pathlib import Path
-import math
 import pandas as pd
-import matplotlib.colors as mcolors
 import re
+import json
 
 
 def get_difficulty_or_pattern(name):
@@ -90,18 +87,6 @@ def list_directories(root_dir, label):
     return pd.DataFrame(all_data)
 
 
-import pandas as pd
-import json
-
-
-import pandas as pd
-import json
-
-
-import pandas as pd
-import json
-
-
 def find_best_models(
     datasets,
     tags_of_interest,
@@ -115,7 +100,7 @@ def find_best_models(
     final_dict = {}
 
     # Iterate through datasets, tags, and difficulty/patterns of interest
-    for (dataset_name, data), tags, d_or_p in zip(
+    for (dataset_name, data), tags, d_or_p_list in zip(
         list(datasets.items()), tags_of_interest, difficulty_or_pattern_of_interest
     ):
         if dataset_name == "OceanPlasticCollection":
@@ -126,132 +111,146 @@ def find_best_models(
 
         # Print the tags and difficulty/patterns being used for filtering
         # print(
-        #     f"Processing dataset: {dataset_name}, tags: {tags} and difficulty/pattern values: {d_or_p}"
+        #     f"Processing dataset: {dataset_name}, tags: {tags} and difficulty/pattern values: {d_or_p_list}"
         # )
-
-        # Filter the dataframe for the tags and difficulty_or_pattern_of_interest
-        df_filtered_extended = df[
-            (df["tag"].isin(tags))
-            & (
-                df["difficulty_or_pattern_value"].isin(
-                    [d_or_p if d_or_p is not None else str(d_or_p)]
-                )
-            )
-        ]
-
-        # Verify the filtered data
-        if df_filtered_extended.empty:
-            print(
-                f"No data found for dataset: {dataset_name}, tags: {tags} and difficulty/pattern values: {d_or_p}"
-            )
-            continue  # Skip to the next iteration if there's no data
-
-        # Get the task-specific criteria for this dataset
-        dataset_task_criteria = task_tag_criteria.get(dataset_name, {})
 
         # Initialize a dictionary for the current dataset
         grouped_dict = {}
 
-        # Process each task according to its important tags and criteria
-        for task in df_filtered_extended["task"].unique():
-            # Get the important tags for this task in the current dataset (list of tags)
-            important_tags = dataset_task_criteria.get(task, [])
+        # Check if d_or_p_list is empty
+        if not d_or_p_list:
+            # If the list is empty, consider all data regardless of difficulty or pattern
+            d_or_p_list = [None]
 
-            if not important_tags:
-                print(
-                    f"No valid important tags specified for task: {task} in dataset: {dataset_name}"
-                )
-                continue
-
-            winning_id = None
-
-            # Loop over each important tag to determine the best `id`
-            for tag in important_tags:
-                if tag not in tags:
-                    print(f"Tag {tag} not found in tags for dataset: {dataset_name}")
-                    continue
-
-                # Filter data for the current task and tag
-                df_task_tag = df_filtered_extended[
-                    (df_filtered_extended["task"] == task)
-                    & (df_filtered_extended["tag"] == tag)
+        # Loop through each difficulty_or_pattern_of_interest in the list
+        for d_or_p in d_or_p_list:
+            # If d_or_p is None, skip filtering on difficulty_or_pattern_value
+            if d_or_p is None:
+                df_filtered_extended = df[df["tag"].isin(tags)]
+            else:
+                # Filter the dataframe for the tags and difficulty_or_pattern_of_interest
+                df_filtered_extended = df[
+                    (df["tag"].isin(tags))
+                    & (
+                        df["difficulty_or_pattern_value"].isin(
+                            [d_or_p if d_or_p is not None else str(d_or_p)]
+                        )
+                    )
                 ]
 
-                if df_task_tag.empty:
+            # Verify the filtered data
+            if df_filtered_extended.empty:
+                print(
+                    f"No data found for dataset: {dataset_name}, tags: {tags} and difficulty/pattern values: {d_or_p}"
+                )
+                continue  # Skip to the next iteration if there's no data
+
+            # Get the task-specific criteria for this dataset
+            dataset_task_criteria = task_tag_criteria.get(dataset_name, {})
+
+            # Process each task according to its important tags and criteria
+            for task in df_filtered_extended["task"].unique():
+                # Get the important tags for this task in the current dataset (list of tags)
+                important_tags = dataset_task_criteria.get(task, [])
+
+                if not important_tags:
                     print(
-                        f"No data found for task: {task} and tag: {tag} in dataset: {dataset_name}"
+                        f"No valid important tags specified for task: {task} in dataset: {dataset_name}"
                     )
                     continue
 
-                # Group the data by task, id, difficulty/pattern, and tag, then calculate the mean and std value over all steps
-                df_grouped = df_task_tag.groupby(
+                winning_id = None
+
+                # Loop over each important tag to determine the best `id`
+                for tag in important_tags:
+                    if tag not in tags:
+                        print(
+                            f"Tag {tag} not found in tags for dataset: {dataset_name}"
+                        )
+                        continue
+
+                    # Filter data for the current task and tag
+                    df_task_tag = df_filtered_extended[
+                        (df_filtered_extended["task"] == task)
+                        & (df_filtered_extended["tag"] == tag)
+                    ]
+
+                    if df_task_tag.empty:
+                        print(
+                            f"No data found for task: {task} and tag: {tag} in dataset: {dataset_name}"
+                        )
+                        continue
+
+                    # Group the data by task, id, difficulty/pattern, and tag, then calculate the mean and std value over all steps
+                    df_grouped = df_task_tag.groupby(
+                        ["difficulty_or_pattern_value", "task", "id", "tag"],
+                        as_index=False,
+                    ).agg(mean_value=("value", "mean"), std_value=("value", "std"))
+
+                    # Determine whether to find max or min based on the tag criteria
+                    if tag_criteria.get(tag) == "max":
+                        idx = df_grouped.groupby(
+                            ["difficulty_or_pattern_value", "task"]
+                        )["mean_value"].idxmax()
+                    elif tag_criteria.get(tag) == "min":
+                        idx = df_grouped.groupby(
+                            ["difficulty_or_pattern_value", "task"]
+                        )["mean_value"].idxmin()
+                    else:
+                        print(f"Tag {tag} does not have a valid criteria (max/min)")
+                        continue
+
+                    # Get the winning row for this task and tag
+                    df_winning_row = df_grouped.loc[idx]
+
+                    # If this is the first tag or the same id is confirmed, set the winning id
+                    if winning_id is None:
+                        winning_id = int(df_winning_row["id"].iloc[0])
+                    elif winning_id != int(df_winning_row["id"]):
+                        print(
+                            f"Inconsistent winning ids for task: {task} in dataset: {dataset_name}"
+                        )
+                        winning_id = None
+                        break
+
+                if winning_id is None:
+                    print(
+                        f"No consistent winning id found for task: {task} in dataset: {dataset_name}"
+                    )
+                    continue
+
+                # Get the mean and std values for all tags for this winning id across all steps
+                df_winning_data = df_filtered_extended[
+                    (df_filtered_extended["task"] == task)
+                    & (df_filtered_extended["id"] == winning_id)
+                ]
+
+                # Group the data by tag, difficulty, and id to compute the mean and std over all steps
+                df_mean_values = df_winning_data.groupby(
                     ["difficulty_or_pattern_value", "task", "id", "tag"], as_index=False
                 ).agg(mean_value=("value", "mean"), std_value=("value", "std"))
 
-                # Determine whether to find max or min based on the tag criteria
-                if tag_criteria.get(tag) == "max":
-                    idx = df_grouped.groupby(["difficulty_or_pattern_value", "task"])[
-                        "mean_value"
-                    ].idxmax()
-                elif tag_criteria.get(tag) == "min":
-                    idx = df_grouped.groupby(["difficulty_or_pattern_value", "task"])[
-                        "mean_value"
-                    ].idxmin()
-                else:
-                    print(f"Tag {tag} does not have a valid criteria (max/min)")
-                    continue
+                # Convert the tuple key to a string representation
+                winning_difficulty_or_pattern_value = df_winning_row[
+                    "difficulty_or_pattern_value"
+                ].iloc[0]
+                key = f"{int(task)}_{winning_difficulty_or_pattern_value if winning_difficulty_or_pattern_value != None else None}"
 
-                # Get the winning row for this task and tag
-                df_winning_row = df_grouped.loc[idx]
-
-                # If this is the first tag or the same id is confirmed, set the winning id
-                if winning_id is None:
-                    winning_id = int(df_winning_row["id"].iloc[0])
-                elif winning_id != int(df_winning_row["id"]):
-                    print(
-                        f"Inconsistent winning ids for task: {task} in dataset: {dataset_name}"
-                    )
-                    winning_id = None
-                    break
-
-            if winning_id is None:
-                print(
-                    f"No consistent winning id found for task: {task} in dataset: {dataset_name}"
-                )
-                continue
-
-            # Get the mean and std values for all tags for this winning id across all steps
-            df_winning_data = df_filtered_extended[
-                (df_filtered_extended["task"] == task)
-                & (df_filtered_extended["id"] == winning_id)
-            ]
-
-            # Group the data by tag, difficulty, and id to compute the mean and std over all steps
-            df_mean_values = df_winning_data.groupby(
-                ["difficulty_or_pattern_value", "task", "id", "tag"], as_index=False
-            ).agg(mean_value=("value", "mean"), std_value=("value", "std"))
-
-            # Convert the tuple key to a string representation
-            winning_difficulty_or_pattern_value = df_winning_row[
-                "difficulty_or_pattern_value"
-            ].iloc[0]
-            key = f"{int(task)}_{winning_difficulty_or_pattern_value if winning_difficulty_or_pattern_value != None else None}"
-
-            # Store the mean and std values for all tags
-            grouped_dict[key] = {
-                "winning_id": winning_id,
-                "important_tags": important_tags,
-                "mean_values": df_mean_values.to_dict(
-                    orient="records"
-                ),  # Mean and std values across all tags
-            }
+                # Store the mean and std values for all tags
+                grouped_dict[key] = {
+                    "winning_id": winning_id,
+                    "important_tags": important_tags,
+                    "mean_values": df_mean_values.to_dict(
+                        orient="records"
+                    ),  # Mean and std values across all tags
+                }
 
         # Add the current dataset results to the final dictionary
         final_dict[f"{dataset_name}"] = grouped_dict
 
         # Display the resulting dictionary for this dataset
         # print(
-        #     f"Results for dataset: {dataset_name}, tags: {tags} and difficulty/pattern values: {d_or_p}"
+        #     f"Results for dataset: {dataset_name}, tags: {tags} and difficulty/pattern values: {d_or_p_list}"
         # )
         # print(grouped_dict)
 
@@ -261,16 +260,6 @@ def find_best_models(
 
     # print(f"Final results have been written to {output_json_path}")
 
-
-path_prefix = "C:/Users/pdsie/Documents/hivex-results/results/"
-
-test_dirs = [
-    f"{path_prefix}WindFarmControl/test",
-    f"{path_prefix}WildfireResourceManagement/test",
-    f"{path_prefix}DroneBasedReforestation/test",
-    f"{path_prefix}OceanPlasticCollection/test",
-    f"{path_prefix}AerialWildfireSuppression/test",
-]
 
 tags_of_interest = [
     [
@@ -320,11 +309,11 @@ tags_of_interest = [
 ]
 
 difficulty_or_pattern_of_interest = [
-    0,
-    5,
-    5,
+    [0, 1, 2, 3, 4, 5, 6, 7, 8],
+    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
     None,
-    5,
+    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
 ]
 
 tag_criteria = {
@@ -398,8 +387,17 @@ task_tag_criteria = {
     },
 }
 
+path_prefix = "../hivex-results/results/"
 
-output_json_path = "best_models.json"
+test_dirs = [
+    f"{path_prefix}WindFarmControl/test",
+    f"{path_prefix}WildfireResourceManagement/test",
+    f"{path_prefix}DroneBasedReforestation/test",
+    f"{path_prefix}OceanPlasticCollection/test",
+    f"{path_prefix}AerialWildfireSuppression/test",
+]
+
+output_json_path = "best_models_per_task_difficulty_id.json"
 
 datasets = {}
 
