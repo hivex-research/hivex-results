@@ -8,3 +8,4 @@ results/WildfireResourceManagement/test
 results/WildfireResourceManagement/train
 results/WindFarmControl/test
 results/WindFarmControl/train
+tools/huggingface/upload_models_to_hf.py
