@@ -96,8 +96,8 @@ def generate_yaml_WFC(data, key):
             "Episode Length: <code>5000</code><br>"
             "Training <code>max_steps</code>: <code>8000000</code><br>"
             "Testing <code>max_steps</code>: <code>8000000</code><br><br>"
-            "Train & Test [Scripts](https://github.com/hivex-research/hivex)<br>"
-            "Download the [Environment](https://github.com/hivex-research/hivex-environments)"
+            "Train & Test [Scripts][ANONYMIZED]<br>"
+            "Download the [Environment][ANONYMIZED]"
         )
 
     # Copy the contents of the folder corresponding to the original_train_name
@@ -202,8 +202,8 @@ def generate_yaml_OPC(data, key):
             "Episode Length: <code>5000</code><br>"
             "Training <code>max_steps</code>: <code>3000000</code><br>"
             "Testing <code>max_steps</code>: <code>150000</code><br><br>"
-            "Train & Test [Scripts](https://github.com/hivex-research/hivex)<br>"
-            "Download the [Environment](https://github.com/hivex-research/hivex-environments)"
+            "Train & Test [Scripts][ANONYMIZED]<br>"
+            "Download the [Environment][ANONYMIZED]"
         )
 
     # Copy the contents of the folder corresponding to the original_train_name
@@ -308,8 +308,8 @@ def generate_yaml_WRM(data, key):
             "Episode Length: <code>500</code><br>"
             "Training <code>max_steps</code>: <code>450000</code><br>"
             "Testing <code>max_steps</code>: <code>45000</code><br><br>"
-            "Train & Test [Scripts](https://github.com/hivex-research/hivex)<br>"
-            "Download the [Environment](https://github.com/hivex-research/hivex-environments)"
+            "Train & Test [Scripts][ANONYMIZED]<br>"
+            "Download the [Environment][ANONYMIZED]"
         )
 
     # Copy the contents of the folder corresponding to the original_train_name
@@ -423,8 +423,8 @@ def generate_yaml_DBR(data, key):
             "Episode Length: <code>2000</code><br>"
             "Training <code>max_steps</code>: <code>1200000</code><br>"
             "Testing <code>max_steps</code>: <code>300000</code><br><br>"
-            "Train & Test [Scripts](https://github.com/hivex-research/hivex)<br>"
-            "Download the [Environment](https://github.com/hivex-research/hivex-environments)"
+            "Train & Test [Scripts][ANONYMIZED]<br>"
+            "Download the [Environment][ANONYMIZED]"
         )
 
     # Copy the contents of the folder corresponding to the original_train_name
@@ -540,8 +540,8 @@ def generate_yaml_AWS(data, key):
             "Episode Length: <code>3000</code><br>\n"
             "Training <code>max_steps</code>: <code>1800000</code><br>\n"
             "Testing <code>max_steps</code>: <code>180000</code><br><br>\n\n"
-            "Train & Test [Scripts](https://github.com/hivex-research/hivex)<br>\n"
-            "Download the [Environment](https://github.com/hivex-research/hivex-environments)"
+            "Train & Test [Scripts][ANONYMIZED]<br>\n"
+            "Download the [Environment][ANONYMIZED]"
         )
 
     # Copy the contents of the folder corresponding to the original_train_name

@@ -19,11 +19,11 @@ This repository holds all result plots and the script to create such. Due to siz
 <br>
 <br>
 
-# ✨ Submit your own Results to the [HIVEX Leaderboard](https://huggingface.co/spaces/hivex-research/hivex-leaderboard) on Huggingface 🤗
+# ✨ Submit your own Results to the HIVEX Leaderboard [ANONYMIZED] on Huggingface 🤗
 
-1. Install all dependencies as described in the [HIVEX repository README](https://github.com/hivex-research/hivex/tree/main).
+1. Install all dependencies as described in the HIVEX repository README [ANONYMIZED].
 
-2. Run the Train and Test Pipeline in the [HIVEX repository](https://github.com/hivex-research/hivex/tree/main), either using [ML-Agents](https://github.com/hivex-research/hivex/tree/main?tab=readme-ov-file#-reproducing-paper-results) or with your [favorite framework](https://github.com/hivex-research/hivex/tree/main?tab=readme-ov-file#-additional-environments-and-training-frameworks).
+2. Run the Train and Test Pipeline in the HIVEX repository [ANONYMIZED], either using ML-Agents [ANONYMIZED] or with your favorite framework [ANONYMIZED].
 
 3. Add your results to the respective environment/train and environment/test folders. We have provided a `train_dummy_folder` (results/WindFarmControl/train_dummy_folder) and `test_dummy_folder` (results/WindFarmControl/test_dummy_folder) with results for training and testing on the Wind Farm Control environment.
 
@@ -45,4 +45,4 @@ python tools/huggingface/generate_hf_yaml.py
 
 6. Finally, upload the content of the generated folder(s) to Huggingface 🤗 as a new model.
 
-7. Every 24 hours, the [HIVEX Leaderboard](https://huggingface.co/spaces/hivex-research/hivex-leaderboard) is fetching new models. We will review your model as soon as possible and it to the verified list of models as soon as possible. If you have any questions please feel free to reach out to p.d.siedler@gmail.com.
+7. Every 24 hours, the HIVEX Leaderboard [ANONYMIZED] is fetching new models. We will review your model as soon as possible and it to the verified list of models as soon as possible. If you have any questions please feel free to reach out to [ANONYMIZED].
